@@ -1,0 +1,57 @@
+"use client";
+
+import { useState, FormEvent } from "react";
+
+export default function WaitlistPage() {
+  const [submitted, setSubmitted] = useState(false);
+
+  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setSubmitted(true);
+  }
+
+  return (
+    <section className="flex min-h-[70vh] items-center justify-center px-4 py-20">
+      <div className="w-full max-w-md text-center">
+        {submitted ? (
+          <div>
+            <p className="text-3xl">🎉</p>
+            <h1 className="mt-4 text-2xl font-bold text-text-main">
+              ¡Listo! Te avisamos pronto
+            </h1>
+            <p className="mt-2 text-text-muted">
+              Gracias por anotarte. Te escribimos cuando la app esté lista.
+            </p>
+          </div>
+        ) : (
+          <>
+            <h1 className="text-3xl font-bold text-text-main">
+              Ser de los primeros
+            </h1>
+            <p className="mt-3 text-text-muted">
+              Hobbyer está en beta. Dejá tu email y te avisamos cuando podés
+              descargarla.
+            </p>
+            <form onSubmit={handleSubmit} className="mt-8 flex flex-col gap-4">
+              <input
+                type="email"
+                required
+                placeholder="tu@email.com"
+                className="rounded-lg border border-gray-300 px-4 py-3 text-text-main outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
+              />
+              <button
+                type="submit"
+                className="rounded-lg bg-primary px-6 py-3 font-semibold text-white transition-colors hover:bg-primary-dark"
+              >
+                Anotarme
+              </button>
+            </form>
+            <p className="mt-4 text-xs text-text-muted">
+              No spam. Solo te escribimos cuando la app esté lista.
+            </p>
+          </>
+        )}
+      </div>
+    </section>
+  );
+}
