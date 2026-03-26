@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import Link from "next/link";
 
 export default function WaitlistPage() {
   const [submitted, setSubmitted] = useState(false);
@@ -15,12 +16,13 @@ export default function WaitlistPage() {
       <div className="w-full max-w-md text-center">
         {submitted ? (
           <div>
-            <p className="text-3xl">🎉</p>
+            <p className="text-3xl">📩</p>
             <h1 className="mt-4 text-2xl font-bold text-text-main">
-              ¡Listo! Te avisamos pronto
+              ¡Listo!
             </h1>
             <p className="mt-2 text-text-muted">
-              Gracias por anotarte. Te escribimos cuando la app esté lista.
+              En los próximos días te llega un email de Firebase con el link
+              para descargar la beta. Si no lo ves, revisá Spam 📩
             </p>
           </div>
         ) : (
@@ -48,6 +50,12 @@ export default function WaitlistPage() {
             </form>
             <p className="mt-4 text-xs text-text-muted">
               No spam. Solo te escribimos cuando la app esté lista.
+            </p>
+            <p className="mt-6 text-sm text-text-muted">
+              ¿Ya recibiste el email?{" "}
+              <Link href="/beta" className="font-medium text-primary hover:underline">
+                → Ver instrucciones de instalación
+              </Link>
             </p>
           </>
         )}
