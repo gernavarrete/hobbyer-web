@@ -1,22 +1,18 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
     <nav className="w-full border-b border-gray-100 bg-white">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-        <Link href="/" className="flex items-center gap-2">
-          <svg
-            width="28"
-            height="28"
-            viewBox="0 0 28 28"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-          >
-            <circle cx="10" cy="14" r="5" stroke="#6C63FF" strokeWidth="2" fill="none" />
-            <circle cx="18" cy="14" r="5" stroke="#6C63FF" strokeWidth="2" fill="none" />
-          </svg>
-          <span className="text-xl font-bold text-primary">hobbyer</span>
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/hobbyer-logo.svg"
+            alt="Hobbyer"
+            width={160}
+            height={32}
+            priority
+          />
         </Link>
         <div className="hidden gap-6 sm:flex">
           <Link

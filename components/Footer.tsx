@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -6,8 +7,17 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-12">
         <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
           <div>
-            <span className="text-xl font-bold text-primary">hobbyer</span>
-            <p className="mt-2 max-w-xs text-sm text-gray-400">
+            {/* Solo el ícono cuadrado del logo (primeros 120px del SVG 600x120) */}
+            <div className="overflow-hidden" style={{ width: 40, height: 40 }}>
+              <Image
+                src="/hobbyer-logo.svg"
+                alt="Hobbyer"
+                width={200}
+                height={40}
+                style={{ maxWidth: "none" }}
+              />
+            </div>
+            <p className="mt-3 max-w-xs text-sm text-gray-400">
               Conectamos personas por lo que les apasiona.
             </p>
           </div>
