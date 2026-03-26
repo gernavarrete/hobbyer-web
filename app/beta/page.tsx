@@ -45,15 +45,15 @@ const features = [
 
 export default function BetaPage() {
   return (
-    <section className="px-4 py-16">
+    <section className="px-4 py-16 pt-28">
       <div className="mx-auto max-w-2xl">
 
         {/* Hero */}
         <div className="text-center">
-          <h1 className="text-3xl font-extrabold text-text-main sm:text-4xl">
+          <h1 className="text-3xl font-extrabold text-white sm:text-4xl">
             Bienvenido a la beta de Hobbyer 👋
           </h1>
-          <p className="mt-4 text-lg text-text-muted">
+          <p className="mt-4 text-lg text-on-surface-variant">
             Gracias por ser parte de los primeros testers. Seguí estos pasos
             para instalar la app.
           </p>
@@ -61,7 +61,7 @@ export default function BetaPage() {
 
         {/* Pasos */}
         <div className="mt-12">
-          <h2 className="text-xl font-bold text-text-main">Cómo instalar</h2>
+          <h2 className="text-xl font-bold text-white">Cómo instalar</h2>
           <div className="mt-6 flex flex-col gap-0">
             {steps.map((step, index) => (
               <div key={step.number} className="flex gap-4">
@@ -76,8 +76,8 @@ export default function BetaPage() {
                 </div>
                 {/* Contenido */}
                 <div className={`pb-8 ${index === steps.length - 1 ? "pb-0" : ""}`}>
-                  <p className="font-semibold text-text-main">{step.title}</p>
-                  <p className="mt-1 text-sm text-text-muted">{step.description}</p>
+                  <p className="font-semibold text-white">{step.title}</p>
+                  <p className="mt-1 text-sm text-on-surface-variant">{step.description}</p>
                 </div>
               </div>
             ))}
@@ -85,15 +85,15 @@ export default function BetaPage() {
         </div>
 
         {/* Qué probamos */}
-        <div className="mt-12 rounded-xl bg-surface p-6">
-          <h2 className="text-xl font-bold text-text-main">¿Qué probamos?</h2>
+        <div className="mt-12 rounded-xl bg-surface-container p-6">
+          <h2 className="text-xl font-bold text-white">¿Qué probamos?</h2>
           <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:gap-4">
             {features.map((feature) => (
               <div
                 key={feature}
-                className="flex items-start gap-2 rounded-lg bg-white p-4 text-sm text-text-main shadow-sm"
+                className="flex items-start gap-2 rounded-lg bg-surface-container-high p-4 text-sm text-on-surface shadow-sm"
               >
-                <span className="mt-0.5 text-green-500 font-bold">✓</span>
+                <span className="mt-0.5 text-green-400 font-bold">✓</span>
                 <span>{feature}</span>
               </div>
             ))}
@@ -102,10 +102,10 @@ export default function BetaPage() {
 
         {/* Reportar problema */}
         <div className="mt-12 text-center">
-          <h2 className="text-xl font-bold text-text-main">
+          <h2 className="text-xl font-bold text-white">
             Reportar un problema
           </h2>
-          <p className="mt-3 text-text-muted">
+          <p className="mt-3 text-on-surface-variant">
             Si encontrás algo raro, mandanos un mensaje a{" "}
             <a
               href="mailto:beta@hobbyer.club"
@@ -114,7 +114,7 @@ export default function BetaPage() {
               beta@hobbyer.club
             </a>
           </p>
-          <p className="mt-2 text-text-muted">o por WhatsApp</p>
+          <p className="mt-2 text-on-surface-variant">o por WhatsApp</p>
           <a
             href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hola%2C+encontré+un+bug+en+Hobbyer+beta`}
             target="_blank"
@@ -126,11 +126,11 @@ export default function BetaPage() {
         </div>
 
         {/* Link a privacy/terms */}
-        <div className="mt-16 flex justify-center gap-6 text-sm text-text-muted">
-          <Link href="/privacy" className="hover:text-text-main">
+        <div className="mt-16 flex justify-center gap-6 text-sm text-on-surface-variant">
+          <Link href="/privacy" className="hover:text-white">
             Privacidad
           </Link>
-          <Link href="/terms" className="hover:text-text-main">
+          <Link href="/terms" className="hover:text-white">
             Términos
           </Link>
         </div>
