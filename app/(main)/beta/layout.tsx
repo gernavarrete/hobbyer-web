@@ -2,8 +2,21 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Beta — Hobbyer',
-  description: 'Instrucciones de instalación de la beta de Hobbyer.',
+  description: 'Instrucciones de instalación de la beta de Hobbyer para testers en Mendoza.',
   robots: 'noindex, nofollow',
+  openGraph: {
+    title: 'Beta — Hobbyer',
+    description: 'Instrucciones de instalación de la beta de Hobbyer para testers.',
+    url: 'https://hobbyer.club/beta',
+    siteName: 'Hobbyer',
+    locale: 'es_AR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Beta — Hobbyer',
+    description: 'Instrucciones de instalación de la beta de Hobbyer para testers.',
+  },
 }
 
 export default function BetaLayout({ children }: { children: React.ReactNode }) {

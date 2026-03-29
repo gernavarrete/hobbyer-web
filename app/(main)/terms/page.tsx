@@ -4,6 +4,19 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Términos y Condiciones — Hobbyer',
   description: 'Términos y condiciones de uso de Hobbyer. Plataforma regulada bajo la ley argentina.',
+  openGraph: {
+    title: 'Términos y Condiciones — Hobbyer',
+    description: 'Términos y condiciones de uso de Hobbyer. Plataforma regulada bajo la ley argentina.',
+    url: 'https://hobbyer.club/terms',
+    siteName: 'Hobbyer',
+    locale: 'es_AR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Términos y Condiciones — Hobbyer',
+    description: 'Términos y condiciones de uso de Hobbyer. Plataforma regulada bajo la ley argentina.',
+  },
 }
 
 export default function TermsPage() {

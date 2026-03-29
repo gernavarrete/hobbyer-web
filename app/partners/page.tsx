@@ -10,7 +10,20 @@ import PartnersFooter from './components/PartnersFooter'
 
 export const metadata: Metadata = {
   title: 'Partners | Hobbyer — Conectá tu negocio con tu comunidad',
-  description: 'Mostrá tu negocio a personas apasionadas por el mismo hobby. Gratis para empezar.',
+  description: 'Mostrá tu negocio a personas apasionadas por el mismo hobby. Gratis para empezar. Mendoza, Argentina.',
+  openGraph: {
+    title: 'Partners | Hobbyer — Conectá tu negocio con tu comunidad',
+    description: 'Mostrá tu negocio a personas apasionadas por el mismo hobby. Gratis para empezar.',
+    url: 'https://hobbyer.club/partners',
+    siteName: 'Hobbyer',
+    locale: 'es_AR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Partners | Hobbyer — Conectá tu negocio con tu comunidad',
+    description: 'Mostrá tu negocio a personas apasionadas por el mismo hobby. Gratis para empezar.',
+  },
 }
 
 export default function PartnersPage() {

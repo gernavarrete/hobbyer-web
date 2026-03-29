@@ -32,10 +32,10 @@ const config: Config = {
         'brand-orange': '#FF6B00',
       },
       fontFamily: {
-        sans: ['Plus Jakarta Sans', 'sans-serif'],
-        headline: ['Plus Jakarta Sans'],
-        body: ['Plus Jakarta Sans'],
-        label: ['Plus Jakarta Sans'],
+        sans: ['var(--font-plus-jakarta-sans)', 'sans-serif'],
+        headline: ['var(--font-plus-jakarta-sans)', 'sans-serif'],
+        body: ['var(--font-plus-jakarta-sans)', 'sans-serif'],
+        label: ['var(--font-plus-jakarta-sans)', 'sans-serif'],
       },
       borderRadius: {
         DEFAULT: '1rem',

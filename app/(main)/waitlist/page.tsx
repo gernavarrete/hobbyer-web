@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function WaitlistPage() {
   const [name, setName] = useState('')
@@ -164,20 +165,26 @@ export default function WaitlistPage() {
           {/* Social Proof */}
           <div className="mt-8 flex items-center justify-center gap-4">
             <div className="flex -space-x-3">
-              <img
+              <Image
                 className="w-10 h-10 rounded-full border-2 border-surface-container-high object-cover"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOpriRB7Othf5j2e7Vn9eqGTqtRJ2frAxltV_JyY7tnWP9xPsO9bPf2aMmoRNtVAq7JLzwhVPgeGbLZURB5WuFOFyhI9vWVYZevH8Cfu7Y9cGpLV9AhM22EXX_slWKxrnGTHFu9vIL21ebZMf_WrXUFrKoLnUbDUzSIpFNDg_NMHOEsX6CEZpwq8DfgDpfkKpO_2Toa8mxRmC7YzRFlB9zAtmj2MewJ3Rg7sCr8MCno2UBouG7jRVMAwHq0zLyevVvfy_eH_O1JPEs"
                 alt="Tester 1"
+                width={40}
+                height={40}
               />
-              <img
+              <Image
                 className="w-10 h-10 rounded-full border-2 border-surface-container-high object-cover"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5ZzfRnSsm7T0_VuwGSHaAjJ0mUssujhxEv3aCFjbo2SJYWIvZPS8beH4MhYspoph76NdHG4RP--Bb76i7l528SfhtZXq491nqUjRDv_ieosDmhKHjVDRo83ujWBkdprGG5-VTtHov4_53t_l6BFy7GE0v8bYnYQERtuAaigwvpAgBxy5YhXH3eCksZ5hRZgQXFN9RN5wOlNU45Z7rYHEnl9t00MJcxf_JfVH9UeZb8FLgVafgAuCpiEwAX9SyVeUSSEkjlnmOWvD-"
                 alt="Tester 2"
+                width={40}
+                height={40}
               />
-              <img
+              <Image
                 className="w-10 h-10 rounded-full border-2 border-surface-container-high object-cover"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlDh7GfXW_78QYPF59A68xNv28DqSESg3C1zqG0GdxuC2mrsRVIb7x4UWKnxH946ne4jloxaSCtW6eOGIlrK5SRlyGyBombRLex9yls7o_9yOLXBhp8_i_83DcDY-BDRG05FPXQIUW47ihvDldE-ZbnSC09StcdhBvnxJTL9lz8gL-u92oY60bKxBRPOj-xNXDvYkKSYNhzzIcQgMfVKtcuPVuXfFYr9NJqIStV9Bi72WGQvrYN9OvZhOe0xrxKNZGZ_i1_Oi5d8kS"
                 alt="Tester 3"
+                width={40}
+                height={40}
               />
             </div>
             <p className="text-[12px] text-on-secondary font-medium">
@@ -211,11 +218,12 @@ export default function WaitlistPage() {
         {/* Contextual Social Proof Card */}
         <div className="mt-8 relative opacity-60 flex justify-center scale-95 pointer-events-none">
           <div className="glass-card rounded-lg p-4 flex items-center gap-4 w-full max-w-sm">
-            <div className="w-12 h-12 rounded-full overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
+            <div className="w-12 h-12 rounded-full overflow-hidden relative">
+              <Image
+                className="object-cover"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh_kwR1IExCX2TIyNw8msib0CR7gmO_OMwirpr-DgenMGRheycQBfyxIUzuxyIIeXAMqc-XM_2eJ6Y-pU12s3pZnPNOMWlIE6wqpnNRHulISKjDiLiVdQSaRWR6upvjoARbRLe-FV6LCweIN6NxS3EKNQ74l130uEhWJZivzMNx9MXtOIMe-fJ4OdMMvIbqFsnT27eRyL-GnRLIE34O00FJWDt-PkBnRSwrF51ccuKic1Y5_wQqVLsOHLNkUexr73-3jjougVG1-0q"
                 alt="Mendoza Argentina"
+                fill
               />
             </div>
             <div>

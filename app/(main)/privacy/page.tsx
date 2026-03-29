@@ -2,7 +2,20 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Política de Privacidad — Hobbyer',
-  description: 'Conocé cómo Hobbyer maneja y protege tus datos personales.',
+  description: 'Conocé cómo Hobbyer maneja y protege tus datos personales conforme a la Ley 25.326 y la normativa de la AAIP.',
+  openGraph: {
+    title: 'Política de Privacidad — Hobbyer',
+    description: 'Conocé cómo Hobbyer maneja y protege tus datos personales.',
+    url: 'https://hobbyer.club/privacy',
+    siteName: 'Hobbyer',
+    locale: 'es_AR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Política de Privacidad — Hobbyer',
+    description: 'Conocé cómo Hobbyer maneja y protege tus datos personales.',
+  },
 }
 
 export default function PrivacyPage() {

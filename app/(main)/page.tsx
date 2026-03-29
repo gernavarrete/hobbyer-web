@@ -1,4 +1,24 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
+
+export const metadata: Metadata = {
+  title: 'Hobbyer — Encontrá personas con tus mismos hobbies',
+  description: 'Conectate con personas cercanas que comparten tus intereses. Pádel, running, música, gaming y más. Lanzamos en Mendoza.',
+  openGraph: {
+    title: 'Hobbyer — Encontrá personas con tus mismos hobbies',
+    description: 'Conectate con personas cercanas que comparten tus intereses. Pádel, running, música, gaming y más.',
+    url: 'https://hobbyer.club',
+    siteName: 'Hobbyer',
+    locale: 'es_AR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Hobbyer — Encontrá personas con tus mismos hobbies',
+    description: 'Conectate con personas cercanas que comparten tus intereses.',
+  },
+}
 
 export default function HomePage() {
   return (
@@ -35,20 +55,29 @@ export default function HomePage() {
             </div>
             <div className="mt-12 flex items-center justify-center lg:justify-start gap-4">
               <div className="flex -space-x-3">
-                <img
+                <Image
                   className="w-10 h-10 rounded-full border-2 border-background"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnKv2VOB_vEWXAlR5qCFCezoNlWzxcygeqOB88JO2MPISGlPQfZKAx4umInokZ-YTkeJjdVQzy337M-n4WyRSk0k_7Tmml0uS_uPMm20xiKY-A6JRt1AcHlbcaNCsk2ODjwIoBweRM0mPouqwwtIMldyvvUxcIVpZAAF2UB5DmEPqO273ubHspGml73OGnSUbcNQP48AwtfguXa3XQGj8afUh9S66oSTC1YhFxG4DpEi0Y3rQ7GL4-9fx1dcaV5wn75kXJvjldp2_T"
                   alt="Usuaria de Hobbyer sonriendo"
+                  width={40}
+                  height={40}
+                  priority
                 />
-                <img
+                <Image
                   className="w-10 h-10 rounded-full border-2 border-background"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKgcGT7wVGXGy0OhRVS5KZCFF94IpJEb2ludehketGCxwbzxpDc0PDleFf9-EsOOFisBJ3AH5GmoVSotOIAFBgcIQlYoU1vI4Dk1MlQBg_RDKGU1M_4nxbRn4h3UDQYJhFEtbhq9Cj21kjckpqj_096KaG1BIPqx0BUX0hNH_BJwzRBFzVyxnD0k0VwLSkzSHK5qbZHOmnla2b2NpxrLQijelRK9C_nuYYzUZWrkmyFjA60ZueRROxbJ0xDDcFhUupPPAbugIhGN3f"
                   alt="Usuario de Hobbyer sonriendo"
+                  width={40}
+                  height={40}
+                  priority
                 />
-                <img
+                <Image
                   className="w-10 h-10 rounded-full border-2 border-background"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIXV6hmOVSdHefd-MaiOTEKEuXuu7fZwRyT2xpqdOoIMVDYtx_iogNXnBiGA0lhwZUIiq1ArfqwsgJn5x4SRqw71TkDLlhtILKbuUn1IKN234uWPiJmTS7dSt6UXtQc96y7vqfyPHIVKUeeobszV5eWKpOgaRs3MOXdR10OcTlk5t_TzjU-AeFN6ozQVnfgowl03HRQFQdrOL0X2vNYML0IjWxOsvviUNooz0SAwjkV6guxBmgCYlGNtpBMUINE5u08QtTEuJRoRSK"
                   alt="Usuario de Hobbyer con lentes"
+                  width={40}
+                  height={40}
+                  priority
                 />
               </div>
               <p className="text-sm text-slate-400 font-medium">
@@ -119,10 +148,11 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Card 1: Find Partners */}
             <div className="group relative aspect-[3/4] rounded-lg overflow-hidden shadow-2xl transition-transform duration-500 hover:-translate-y-4">
-              <img
+              <Image
                 className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCApSUcbTkyoLXflB_3EPqwnT6FjInTQ_VWQWv1G_S51jfXUrnJNGPwBzREh5vEoEweImFexizBOFTeAYii1m8EdzowUqNtBGeHOByQZqG44h6iI0ivQkMnMpRiHlnHdLi11fYnxTzJjUiTPY6nXOplh0ltTkJuMwGVpeaQuvKrToTspX2JrmC5YNnfpEJmr3xNlJRUQL2A5jOzeH-UP7oRvIVCCauHn6s_aXrhdEsolxe0hgTjQr-bEj7NmHuu5qcNivh2FtdEtjtp"
                 alt="Dos personas chocando los cinco durante una carrera matutina en un parque"
+                fill
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
               <div className="absolute bottom-0 p-8 w-full">
@@ -141,10 +171,11 @@ export default function HomePage() {
 
             {/* Card 2: Join Tribes */}
             <div className="group relative aspect-[3/4] rounded-lg overflow-hidden shadow-2xl transition-transform duration-500 hover:-translate-y-4">
-              <img
+              <Image
                 className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8PNuUlXD-6Wm7ZUZqZNsQqfXYuqtL7BPtHQY1iZlJF9YHaSEWvZPrLF3J2XGvX9UNbZDw7btxyQCCT9HOxaNs6EnAByTxkbByBOX0Lmy_MUjG-8Mg0Q3UK0p2QCNzi2oXRTG3frg71wi0KslIZPtMOASO35T5ZW39wZ5ok5neLSuZm5siZ1vSffJfoqvS2LLm8pCnAu3OvOjQp6eSmfcBMqsjOAppwl3KHDge3SEqeMePcJe__gcAB1_kGDHLieDidd-PL9McL2Vg"
                 alt="Grupo de personas creativas trabajando juntas en un proyecto en una oficina moderna"
+                fill
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
               <div className="absolute bottom-0 p-8 w-full">
@@ -163,10 +194,11 @@ export default function HomePage() {
 
             {/* Card 3: Real Benefits */}
             <div className="group relative aspect-[3/4] rounded-lg overflow-hidden shadow-2xl transition-transform duration-500 hover:-translate-y-4">
-              <img
+              <Image
                 className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCNbUk9D2348Jssrv2l30sL6M96tkHhNUGtY9WkSmYPVIJayHxkVsV4EFiwW7GouHcT0D-izYZZeXSrZms30jHPg8W8RV7L_E01kMnMfRxegGG4q3Z4MX-zzNPI_eBDusCP-GcTNtJ4Isp6Ekh_WPxfh4sJJyFTWxRncqvALfJNXREUgZr4-pFzGywUSnJu3ataJgxSAPJNhzKKvapcXdG4xvATICDUb1WpRWDTjeNtfVtn9PeVAUqdXy-wevQPH6TMtJaPQn2ae45"
                 alt="Primer plano de una tarjeta de crédito premium siendo usada para un pago sin contacto"
+                fill
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
               <div className="absolute bottom-0 p-8 w-full">
