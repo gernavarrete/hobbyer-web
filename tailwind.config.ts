@@ -28,6 +28,8 @@ const config: Config = {
         'inverse-surface': '#f5f6f8',
         'inverse-on-surface': '#101622',
         'inverse-primary': '#4c84ff',
+        'electric-cobalt': '#0d59f2',
+        'brand-orange': '#FF6B00',
       },
       fontFamily: {
         sans: ['Plus Jakarta Sans', 'sans-serif'],
@@ -40,6 +42,10 @@ const config: Config = {
         lg: '2rem',
         xl: '3rem',
         full: '9999px',
+      },
+      boxShadow: {
+        'cobalt-glow': '0 0 40px rgba(13,89,242,0.3)',
+        'orange-glow': '0 0 40px rgba(255,107,0,0.25)',
       },
     },
   },
