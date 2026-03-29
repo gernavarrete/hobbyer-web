@@ -24,15 +24,15 @@ export default function Footer() {
             <rect fill="white" height="24" rx="12" width="80" x="20" y="48"/>
             <text fill="url(#textGradFooter)" fontFamily="'Plus Jakarta Sans', sans-serif" fontSize="72" fontWeight="800" letterSpacing="-2" x="148" y="85">Hobbyer</text>
           </svg>
-          <p className="text-sm text-slate-500 mt-2">Conectamos personas por lo que les apasiona.</p>
+          <p className="text-sm text-slate-400 mt-2">Conectamos personas por lo que les apasiona.</p>
         </div>
         <div className="flex flex-wrap justify-center gap-8 mb-6 md:mb-0">
-          <Link href="/partners" className="text-slate-500 text-sm hover:text-[#0d59f2] transition-all hover:underline">Partners</Link>
-          <Link href="/privacy" className="text-slate-500 text-sm hover:text-[#0d59f2] transition-all hover:underline">Política de privacidad</Link>
-          <Link href="/terms" className="text-slate-500 text-sm hover:text-[#0d59f2] transition-all hover:underline">Términos y condiciones</Link>
-          <Link href="/waitlist" className="text-slate-500 text-sm hover:text-[#0d59f2] transition-all hover:underline">Waitlist</Link>
+          <Link href="/partners" className="text-slate-400 text-sm hover:text-[#0d59f2] transition-all hover:underline">Partners</Link>
+          <Link href="/privacy" className="text-slate-400 text-sm hover:text-[#0d59f2] transition-all hover:underline">Política de privacidad</Link>
+          <Link href="/terms" className="text-slate-400 text-sm hover:text-[#0d59f2] transition-all hover:underline">Términos y condiciones</Link>
+          <Link href="/waitlist" className="text-slate-400 text-sm hover:text-[#0d59f2] transition-all hover:underline">Waitlist</Link>
         </div>
-        <div className="text-sm text-slate-500">© 2025 Hobbyer. Todos los derechos reservados.</div>
+        <div className="text-sm text-slate-400">© 2025 Hobbyer. Todos los derechos reservados.</div>
       </div>
     </footer>
   )

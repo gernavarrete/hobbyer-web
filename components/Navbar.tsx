@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-[#101622]/80 backdrop-blur-xl shadow-lg shadow-black/20">
       <div className="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center" aria-label="Hobbyer - Inicio">
           <svg fill="none" height="120" style={{height: '40px', width: 'auto'}} viewBox="0 0 600 120" width="600" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="iconGradNav" x1="0%" x2="100%" y1="0%" y2="100%">
