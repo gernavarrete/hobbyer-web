@@ -5,7 +5,7 @@ const API_URL = process.env.NEXT_PUBLIC_API_URL
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
-    const { email, name, hobby, source } = body
+    const { email, name, hobby, source, platform } = body
 
     if (!email || !email.includes('@')) {
       return NextResponse.json(
@@ -23,6 +23,7 @@ export async function POST(request: NextRequest) {
           email,
           name: name || null,
           hobby: hobby || null,
+          platform: platform || null,
           source: source || 'waitlist',
         }),
       }

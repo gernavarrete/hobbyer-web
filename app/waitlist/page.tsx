@@ -7,6 +7,7 @@ export default function WaitlistPage() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [hobby, setHobby] = useState('')
+  const [platform, setPlatform] = useState<'android' | 'ios' | ''>('')
   const [loading, setLoading] = useState(false)
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState('')
@@ -22,7 +23,7 @@ export default function WaitlistPage() {
       const res = await fetch('/api/waitlist', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, name, hobby, source: 'waitlist' }),
+        body: JSON.stringify({ email, name, hobby, platform: platform || null, source: 'waitlist' }),
       })
       if (res.ok) {
         setSuccess(true)
@@ -113,6 +114,37 @@ export default function WaitlistPage() {
                   className="w-full bg-surface-container-highest border-none rounded-full px-6 py-4 text-on-surface placeholder:text-outline focus:ring-2 focus:ring-primary transition-all"
                 />
                 <span className="material-symbols-outlined absolute right-6 top-1/2 -translate-y-1/2 text-outline">search</span>
+              </div>
+            </div>
+            <div className="space-y-1.5">
+              <label className="text-[12px] font-semibold text-on-surface-variant ml-4 uppercase tracking-wider">
+                ¿Qué celular tenés?
+              </label>
+              <div className="grid grid-cols-2 gap-3">
+                <button
+                  type="button"
+                  onClick={() => setPlatform('android')}
+                  className={`flex items-center justify-center gap-2 py-4 rounded-full font-bold text-sm transition-all
+                    ${platform === 'android'
+                      ? 'bg-primary text-white shadow-lg shadow-primary/30'
+                      : 'bg-surface-container-highest text-on-surface-variant hover:text-white hover:bg-surface-container-high'
+                    }`}
+                >
+                  <span className="material-symbols-outlined text-lg">android</span>
+                  Android
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPlatform('ios')}
+                  className={`flex items-center justify-center gap-2 py-4 rounded-full font-bold text-sm transition-all
+                    ${platform === 'ios'
+                      ? 'bg-primary text-white shadow-lg shadow-primary/30'
+                      : 'bg-surface-container-highest text-on-surface-variant hover:text-white hover:bg-surface-container-high'
+                    }`}
+                >
+                  <span className="material-symbols-outlined text-lg">apple</span>
+                  iOS
+                </button>
               </div>
             </div>
             <div className="pt-4">
