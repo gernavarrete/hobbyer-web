@@ -1,3 +1,7 @@
+'use client'
+
+import { Analytics } from '@/app/lib/analytics'
+
 export default function PartnersHero() {
   return (
     <section className="relative px-6 max-w-[1280px] mx-auto min-h-screen flex items-center">
@@ -17,6 +21,7 @@ export default function PartnersHero() {
           <div className="flex flex-col sm:flex-row items-center gap-6">
             <a
               href="#register"
+              onClick={() => Analytics.ctaClick('partners_hero_comenzar')}
               className="w-full sm:w-auto bg-primary text-on-primary text-center px-10 py-5 rounded-full font-extrabold text-lg hover:shadow-cobalt-glow transition-all hover:-translate-y-1"
             >
               Comenzar ahora

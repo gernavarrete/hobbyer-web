@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import Image from 'next/image'
+import CtaButton from '@/components/CtaButton'
 
 export const metadata: Metadata = {
   title: 'Hobbyer — Encontrá personas con tus mismos hobbies',
@@ -40,18 +40,20 @@ export default function HomePage() {
               Conectá con personas que vibran en tu misma frecuencia. Deporte, arte, gaming o lo que te apasione, encontralo en Hobbyer.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Link
+              <CtaButton
                 href="/waitlist"
+                label="home_hero_waitlist"
                 className="bg-primary text-white px-10 py-5 rounded-full text-lg font-extrabold shadow-2xl shadow-primary/30 active:scale-95 transition-all text-center"
               >
                 Unite a la Waitlist
-              </Link>
-              <Link
+              </CtaButton>
+              <CtaButton
                 href="/waitlist"
+                label="home_hero_comunidad"
                 className="glass-card text-white px-10 py-5 rounded-full text-lg font-bold border border-white/10 hover:bg-white/10 active:scale-95 transition-all text-center"
               >
                 Ver Comunidad
-              </Link>
+              </CtaButton>
             </div>
             <div className="mt-12 flex items-center justify-center lg:justify-start gap-4">
               <div className="flex -space-x-3">
@@ -230,12 +232,13 @@ export default function HomePage() {
               Estamos lanzando pronto por invitación. Asegurá tu lugar en la primera ola de Hobbyer.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link
+              <CtaButton
                 href="/waitlist"
+                label="home_cta_bottom_waitlist"
                 className="w-full sm:w-auto bg-primary text-white px-10 py-5 rounded-full text-lg font-extrabold shadow-xl shadow-primary/20 active:scale-95 transition-all"
               >
                 Unite a la Waitlist
-              </Link>
+              </CtaButton>
             </div>
           </div>
         </div>

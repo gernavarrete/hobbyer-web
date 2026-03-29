@@ -1,8 +1,9 @@
 'use client'
 
 import { useState } from 'react'
-import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import Image from 'next/image'
+import { Analytics } from '@/app/lib/analytics'
 
 export default function WaitlistPage() {
   const [name, setName] = useState('')
@@ -10,8 +11,8 @@ export default function WaitlistPage() {
   const [hobby, setHobby] = useState('')
   const [platform, setPlatform] = useState<'android' | 'ios' | ''>('')
   const [loading, setLoading] = useState(false)
-  const [success, setSuccess] = useState(false)
   const [error, setError] = useState('')
+  const router = useRouter()
 
   const handleSubmit = async () => {
     if (!email || !email.includes('@')) {
@@ -27,7 +28,8 @@ export default function WaitlistPage() {
         body: JSON.stringify({ email, name, hobby, platform: platform || null, source: 'waitlist' }),
       })
       if (res.ok) {
-        setSuccess(true)
+        Analytics.waitlistSignup()
+        router.push('/gracias')
       } else {
         setError('Algo salió mal. Intentá de nuevo.')
       }
@@ -192,27 +194,6 @@ export default function WaitlistPage() {
             </p>
           </div>
 
-          {/* Success State Overlay */}
-          {success && (
-            <div className="absolute inset-0 bg-surface-container-high/95 backdrop-blur-xl rounded-lg flex flex-col items-center justify-center text-center p-8 z-20">
-              <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mb-6">
-                <span className="material-symbols-outlined text-primary text-4xl">check_circle</span>
-              </div>
-              <h2 className="text-2xl font-extrabold text-white mb-2">
-                Ya sos parte de la tribu.
-              </h2>
-              <p className="text-on-secondary">
-                En los próximos días te llega un email de Firebase con el link
-                para descargar la beta. Si no lo ves, revisá Spam 📩
-              </p>
-              <Link
-                href="/beta"
-                className="mt-6 text-primary text-sm font-medium hover:underline"
-              >
-                ¿Ya recibiste el email? → Ver instrucciones de instalación
-              </Link>
-            </div>
-          )}
         </div>
 
         {/* Contextual Social Proof Card */}

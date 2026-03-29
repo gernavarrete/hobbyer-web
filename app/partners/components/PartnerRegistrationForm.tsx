@@ -1,6 +1,8 @@
 'use client'
 
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
+import { Analytics } from '@/app/lib/analytics'
 
 type Status = 'idle' | 'loading' | 'success' | 'error'
 
@@ -13,6 +15,7 @@ export default function PartnerRegistrationForm() {
   const [source, setSource] = useState('')
   const [status, setStatus] = useState<Status>('idle')
   const [errorMsg, setErrorMsg] = useState('')
+  const router = useRouter()
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -39,7 +42,8 @@ export default function PartnerRegistrationForm() {
       })
 
       if (res.ok || res.status === 501) {
-        setStatus('success')
+        Analytics.partnerLead()
+        router.push('/partners/gracias')
       } else {
         const data = await res.json().catch(() => ({}))
         setErrorMsg(data.error || 'Algo salió mal. Intentá de nuevo.')
