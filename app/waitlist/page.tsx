@@ -181,7 +181,7 @@ export default function WaitlistPage() {
               />
             </div>
             <p className="text-[12px] text-on-secondary font-medium">
-              <span className="text-white font-bold">+120 hobbistas</span> ya se unieron en Mendoza
+              <span className="text-white font-bold">+120 hobbyers</span> ya se unieron en Mendoza
             </p>
           </div>
 
