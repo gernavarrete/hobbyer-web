@@ -34,7 +34,7 @@ export default function PricingCards() {
 
         {/* Pro */}
         <div className="p-12 glass-card flex flex-col h-full border-brand-orange/50 shadow-orange-glow relative overflow-hidden scale-[1.03] z-10 bg-white/[0.08]">
-          <div className="absolute top-0 right-0 bg-brand-orange text-white text-[11px] font-black px-6 py-2 uppercase tracking-tighter rounded-bl-2xl">
+          <div className="absolute top-0 right-0 bg-brand-orange text-gray-900 text-[11px] font-black px-6 py-2 uppercase tracking-tighter rounded-bl-2xl">
             Más Popular
           </div>
           <div className="mb-10">
@@ -63,7 +63,7 @@ export default function PricingCards() {
               Soporte prioritario
             </li>
           </ul>
-          <button className="w-full py-5 rounded-full bg-brand-orange text-white font-extrabold text-lg hover:brightness-110 hover:shadow-lg transition-all active:scale-95">
+          <button className="w-full py-5 rounded-full bg-brand-orange text-gray-900 font-extrabold text-lg hover:brightness-110 hover:shadow-lg transition-all active:scale-95">
             Sumarme Pro
           </button>
         </div>

@@ -39,9 +39,9 @@ export default function PartnersFooter() {
           <Link href="/terms" className="text-gray-400 hover:text-white transition-all duration-300 font-semibold">Terms of Service</Link>
         </div>
 
-        <div className="text-gray-500 text-sm text-center md:text-right space-y-3">
+        <div className="text-gray-400 text-sm text-center md:text-right space-y-3">
           <p>© 2025 Hobbyer Partners.</p>
-          <p className="text-primary font-black uppercase tracking-widest text-[10px]">MENDOZA, 2026</p>
+          <p className="text-blue-400 font-black uppercase tracking-widest text-[10px]">MENDOZA, 2026</p>
         </div>
       </div>
     </footer>

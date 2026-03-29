@@ -44,7 +44,7 @@ export default function HowItWorks() {
                 <span className="material-symbols-outlined text-electric-cobalt text-5xl">{step.icon}</span>
               </div>
               <h3 className="text-4xl font-bold text-white mb-8">{step.title}</h3>
-              <p className="text-on-secondary/70 leading-relaxed text-xl">{step.description}</p>
+              <p className="text-on-secondary/85 leading-relaxed text-xl">{step.description}</p>
             </div>
           </div>
         ))}

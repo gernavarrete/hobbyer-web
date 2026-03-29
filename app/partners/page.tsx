@@ -43,7 +43,7 @@ export default function PartnersPage() {
               <div className="absolute -bottom-32 -right-32 w-80 h-80 bg-brand-orange/10 rounded-full blur-[100px]" />
               <div className="relative z-10 text-center mb-16">
                 <h2 className="text-4xl font-extrabold text-white mb-4">Postulá tu negocio</h2>
-                <p className="text-on-secondary/70 font-medium">
+                <p className="text-on-secondary/85 font-medium">
                   Revisamos cada solicitud para asegurar la calidad de la comunidad.
                 </p>
               </div>

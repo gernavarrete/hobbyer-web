@@ -64,7 +64,7 @@ export default function PartnerRegistrationForm() {
           </span>
         </div>
         <h3 className="text-2xl font-extrabold text-white mb-3">¡Solicitud recibida!</h3>
-        <p className="text-on-secondary/70 font-medium">
+        <p className="text-on-secondary/85 font-medium">
           Revisamos cada solicitud para asegurar la calidad de la comunidad.<br />
           Te contactamos pronto.
         </p>
@@ -94,6 +94,7 @@ export default function PartnerRegistrationForm() {
             <select
               value={category}
               onChange={(e) => setCategory(e.target.value)}
+              aria-label="Categoría de negocio"
               className={`${inputClass} appearance-none cursor-pointer`}
             >
               <option className="bg-surface-container">Gastronomía</option>

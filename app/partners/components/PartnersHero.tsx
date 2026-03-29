@@ -30,7 +30,7 @@ export default function PartnersHero() {
               <div className="flex -space-x-3">
                 <div className="w-8 h-8 rounded-full border-2 border-background bg-surface-container-highest flex items-center justify-center text-[10px] font-bold text-white">JD</div>
                 <div className="w-8 h-8 rounded-full border-2 border-background bg-primary flex items-center justify-center text-[10px] font-bold text-white">AM</div>
-                <div className="w-8 h-8 rounded-full border-2 border-background bg-brand-orange flex items-center justify-center text-[10px] font-bold text-white">LP</div>
+                <div className="w-8 h-8 rounded-full border-2 border-background bg-brand-orange flex items-center justify-center text-[10px] font-bold text-gray-900">LP</div>
               </div>
               <span className="text-sm font-semibold text-white/90">+500 en lista de espera</span>
             </div>
