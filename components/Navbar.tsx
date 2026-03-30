@@ -33,6 +33,9 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden md:flex gap-8 items-center">
+          <Link href="/blog" className="text-slate-400 font-medium hover:text-white transition-colors px-3 py-1 hover:bg-white/10 rounded-full">
+            Blog
+          </Link>
           <Link href="/partners" className="text-slate-400 font-medium hover:text-white transition-colors px-3 py-1 hover:bg-white/10 rounded-full">
             Partners
           </Link>

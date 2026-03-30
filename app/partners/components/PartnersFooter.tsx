@@ -40,7 +40,7 @@ export default function PartnersFooter() {
         </div>
 
         <div className="text-gray-400 text-sm text-center md:text-right space-y-3">
-          <p>© 2025 Hobbyer Partners.</p>
+          <p>© 2026 Hobbyer Partners.</p>
           <p className="text-blue-400 font-black uppercase tracking-widest text-[10px]">MENDOZA, 2026</p>
         </div>
       </div>
