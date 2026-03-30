@@ -35,7 +35,7 @@ export default function ValueProps() {
                 {p.icon}
               </span>
               <h4 className="text-2xl font-bold text-white mb-4">{p.title}</h4>
-              <p className="text-on-secondary/85 leading-relaxed">{p.description}</p>
+              <p className="text-on-secondary/90 leading-relaxed">{p.description}</p>
             </div>
           ))}
         </div>
