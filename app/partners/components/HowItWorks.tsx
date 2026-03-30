@@ -41,7 +41,7 @@ export default function HowItWorks() {
             </div>
             <div className="relative z-10">
               <div className="w-24 h-24 bg-electric-cobalt/10 rounded-2xl flex items-center justify-center mb-12 border border-electric-cobalt/20 group-hover:scale-110 transition-transform">
-                <span className="material-symbols-outlined text-electric-cobalt text-5xl">{step.icon}</span>
+                <span className="material-symbols-outlined text-electric-cobalt text-5xl w-12 h-12 inline-flex items-center justify-center">{step.icon}</span>
               </div>
               <h3 className="text-4xl font-bold text-white mb-8">{step.title}</h3>
               <p className="text-on-secondary/85 leading-relaxed text-xl">{step.description}</p>

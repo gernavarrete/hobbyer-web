@@ -31,7 +31,7 @@ export default function ValueProps() {
               key={p.title}
               className="p-10 rounded-[2rem] bg-surface-container-high border border-white/5 hover:border-primary/40 transition-all group hover:-translate-y-1"
             >
-              <span className="material-symbols-outlined text-brand-orange mb-8 text-5xl transition-transform group-hover:scale-110 block">
+              <span className="material-symbols-outlined text-brand-orange mb-8 text-5xl transition-transform group-hover:scale-110 w-12 h-12 inline-flex items-center justify-center">
                 {p.icon}
               </span>
               <h4 className="text-2xl font-bold text-white mb-4">{p.title}</h4>

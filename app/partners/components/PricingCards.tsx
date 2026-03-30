@@ -15,15 +15,15 @@ export default function PricingCards() {
           </div>
           <ul className="space-y-6 mb-12 flex-grow">
             <li className="flex items-center gap-4 text-on-secondary">
-              <span className="material-symbols-outlined text-primary">check_circle</span>
+              <span className="material-symbols-outlined text-primary w-6 h-6 inline-flex items-center justify-center">check_circle</span>
               Perfil básico de negocio
             </li>
             <li className="flex items-center gap-4 text-on-secondary">
-              <span className="material-symbols-outlined text-primary">check_circle</span>
+              <span className="material-symbols-outlined text-primary w-6 h-6 inline-flex items-center justify-center">check_circle</span>
               1 Publicación mensual
             </li>
             <li className="flex items-center gap-4 text-on-secondary">
-              <span className="material-symbols-outlined text-primary">check_circle</span>
+              <span className="material-symbols-outlined text-primary w-6 h-6 inline-flex items-center justify-center">check_circle</span>
               Métricas de visualización
             </li>
           </ul>
@@ -47,19 +47,19 @@ export default function PricingCards() {
           </div>
           <ul className="space-y-6 mb-12 flex-grow">
             <li className="flex items-center gap-4 text-white font-semibold">
-              <span className="material-symbols-outlined text-brand-orange" style={{ fontVariationSettings: '"FILL" 1' }}>check_circle</span>
+              <span className="material-symbols-outlined text-brand-orange w-6 h-6 inline-flex items-center justify-center" style={{ fontVariationSettings: '"FILL" 1' }}>check_circle</span>
               Perfil verificado
             </li>
             <li className="flex items-center gap-4 text-white font-semibold">
-              <span className="material-symbols-outlined text-brand-orange" style={{ fontVariationSettings: '"FILL" 1' }}>check_circle</span>
+              <span className="material-symbols-outlined text-brand-orange w-6 h-6 inline-flex items-center justify-center" style={{ fontVariationSettings: '"FILL" 1' }}>check_circle</span>
               Publicaciones ilimitadas
             </li>
             <li className="flex items-center gap-4 text-white font-semibold">
-              <span className="material-symbols-outlined text-brand-orange" style={{ fontVariationSettings: '"FILL" 1' }}>check_circle</span>
+              <span className="material-symbols-outlined text-brand-orange w-6 h-6 inline-flex items-center justify-center" style={{ fontVariationSettings: '"FILL" 1' }}>check_circle</span>
               Destacado en el feed
             </li>
             <li className="flex items-center gap-4 text-white font-semibold">
-              <span className="material-symbols-outlined text-brand-orange" style={{ fontVariationSettings: '"FILL" 1' }}>check_circle</span>
+              <span className="material-symbols-outlined text-brand-orange w-6 h-6 inline-flex items-center justify-center" style={{ fontVariationSettings: '"FILL" 1' }}>check_circle</span>
               Soporte prioritario
             </li>
           </ul>
@@ -77,15 +77,15 @@ export default function PricingCards() {
           </div>
           <ul className="space-y-6 mb-12 flex-grow">
             <li className="flex items-center gap-4 text-on-secondary">
-              <span className="material-symbols-outlined text-primary">check_circle</span>
+              <span className="material-symbols-outlined text-primary w-6 h-6 inline-flex items-center justify-center">check_circle</span>
               Gestión de múltiples locales
             </li>
             <li className="flex items-center gap-4 text-on-secondary">
-              <span className="material-symbols-outlined text-primary">check_circle</span>
+              <span className="material-symbols-outlined text-primary w-6 h-6 inline-flex items-center justify-center">check_circle</span>
               API de integración
             </li>
             <li className="flex items-center gap-4 text-on-secondary">
-              <span className="material-symbols-outlined text-primary">check_circle</span>
+              <span className="material-symbols-outlined text-primary w-6 h-6 inline-flex items-center justify-center">check_circle</span>
               Manager de cuenta dedicado
             </li>
           </ul>
