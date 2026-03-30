@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@material-symbols/font-400": "^0.43.0",
     "@next/third-parties": "^16.2.1",
     "next": "14.2.35",
     "react": "^18",
