@@ -24,11 +24,11 @@ export default function PartnersNav() {
           <span className="text-2xl font-extrabold text-white">Hobbyer Partners</span>
         </div>
 
-        <div className="hidden lg:flex items-center gap-12">
-          <a className="text-white/70 hover:text-white transition-colors text-sm font-medium" href="#">Features</a>
-          <a className="text-white/70 hover:text-white transition-colors text-sm font-medium" href="#">Pricing</a>
-          <a className="text-white/70 hover:text-white transition-colors text-sm font-medium" href="#">Success Stories</a>
-          <a className="text-white/70 hover:text-white transition-colors text-sm font-medium" href="/">Para usuarios</a>
+        <div className="hidden lg:flex items-center gap-8">
+          <a className="text-slate-400 font-medium hover:text-white transition-colors px-3 py-1 hover:bg-white/10 rounded-full" href="#">Features</a>
+          <a className="text-slate-400 font-medium hover:text-white transition-colors px-3 py-1 hover:bg-white/10 rounded-full" href="#">Pricing</a>
+          <a className="text-slate-400 font-medium hover:text-white transition-colors px-3 py-1 hover:bg-white/10 rounded-full" href="#">Success Stories</a>
+          <a className="text-slate-400 font-medium hover:text-white transition-colors px-3 py-1 hover:bg-white/10 rounded-full" href="/">Para usuarios</a>
         </div>
 
         <a
